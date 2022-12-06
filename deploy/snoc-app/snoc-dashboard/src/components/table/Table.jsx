@@ -13,7 +13,7 @@ const Table = () => {
 
     const [data, setData] = React.useState([])
     const [autoRefresh, setAutoRefresh] = React.useState(true)
-    const apiUrl = 'http://localhost:8888/get-predictions/'
+    const apiUrl = 'http://192.168.1.47:8888/get-predictions/'
 
     const rows = [
         {
@@ -73,7 +73,7 @@ const Table = () => {
   const fetchData = () => {
     axios.get(apiUrl,{
         headers:{
-          'Access-Control-Allow-Origin': 'http://localhost:3000',
+          'Access-Control-Allow-Origin': 'http://192.168.1.47:3000',
         }
       })
       .then((res) => {

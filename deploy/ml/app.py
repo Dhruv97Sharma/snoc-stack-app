@@ -27,6 +27,7 @@ print("Loaded model from disk")
 app = FastAPI()
 
 origins = [
+    "http://192.168.1.47:3000",
     "http://localhost:3000",
 ]
 
