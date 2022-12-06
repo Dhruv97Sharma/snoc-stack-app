@@ -21,7 +21,6 @@ COPY . /app
 RUN cd /app/snoc-dashboard/
 
 WORKDIR /app/snoc-dashboard/
-RUN npm install --legacy-peer-deps
 
 
 # EXPOSE TARGET PORT

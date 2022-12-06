@@ -19,7 +19,7 @@ services:
       - ./deploy/snoc-app:/app
     ports:
       - "3000:3000"
-    command: bash -c "npm start"
+    command: bash -c "npm install --legacy-peer-deps && npm start"
     stdin_open: true
     tty: true
     privileged: true
